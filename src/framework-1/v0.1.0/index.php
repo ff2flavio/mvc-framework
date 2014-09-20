@@ -10,7 +10,7 @@ require 'library' . DS . 'STCDS' . DS . 'core' . DS . 'AutoLoad.php';
 
 $autoLoad = new AutoLoad();
 
-spl_autoload_register(array($AutoLoad, 'core'));
+spl_autoload_register(array($autoLoad, 'core'));
 
 
 use STCDS\Core\Controller as Controller;
