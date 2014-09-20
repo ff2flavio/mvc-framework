@@ -16,3 +16,8 @@ spl_autoload_register(array($AutoLoad, 'core'));
 use STCDS\Core\Controller as Controller;
 
 $controller = new Controller();
+
+
+if (!empty($_GET['action'])){
+	$controller->{$_GET['action']}();
+}
